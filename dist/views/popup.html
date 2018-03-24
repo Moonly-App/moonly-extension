@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../css/fontawesome/css/font-awesome.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="../js/libs/jquery.min.js" charset="utf-8"></script>
+  <script src="../js/libs/bootstrap.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="../css/simplebar.css">
+  <link rel="stylesheet" href="../css/popup.css">
+</head>
+
+<body id="popupExtWrap" class="heightAuto">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs nav-pills">
+    <li class="nav-item active">
+      <a class="nav-link" data-toggle="tab" href="#panel1" role="tab">Creator</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#panel2" role="tab">Settings</a>
+    </li>
+  </ul>
+  <!-- Tab panels -->
+  <div id="moonlyWrapper" class="">
+    <div class="tab-content card">
+      <div class="tab-pane fade" id="panel2" role="tabpanel">
+        <!-- LOGIN -->
+        <div id="loginManager">
+          <iframe id="loginPopup" class="hidden"></iframe>
+          <span id="loginStatus"></span>
+        </div>
+      </div>
+      <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+        <div class="embedData"></div>
+        <!-- post creator -->
+        <p id="postStatus" class="alert text-center">
+          <span id="status">Moon.ly initiating...</span>
+          <span id="statusError"></span>
+          <span id="statusSuccess"></span>
+        </p>
+       
+        <div class="postCreator hidden">
+          <div id="thumbImageWrapper">
+          <div class="thumbimageplace"></div>
+          <!--<i class="fa fa-edit"></i>
+          <input type="text" id="editThumbnail" placeholder="edit image url"/>-->
+          </div>
+          
+          <ul class="postdata">
+          </ul>
+          <div class="categoryWrapper">
+            <ul class="categories">
+            </ul>
+          </div>
+          <p>
+            <button id="post" class="btn btn-success">Share</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="../js/config.js"></script>
+  <script type="text/javascript" src="../js/libs/lazyload.min.js"></script>
+  <script type="text/javascript" src="../js/libs/smallfuncs.js"></script>
+  <script type="text/javascript" src="../js/libs/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/libs/chrome-promise.js"></script>
+  <script type="text/javascript" src="../js/popup/query.js"></script>
+  <script src='../js/newtab/jquery.nicescroll.js'></script>
+  <script type="text/javascript" src="../js/popup/popup.js"></script>
+</body>
+
+</html>

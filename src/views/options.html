@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style type="text/css">
+  .action_links{
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 0.5em;
+  }
+  .action_links:hover{
+    background-color: aliceblue;
+  }
+  .action_links::before{
+    content: ">";
+    padding-right: 0.5em;
+    color: #333;
+    visibility: hidden;
+  }
+  .action_links:hover::before,
+  .action_links:focus::before{
+    visibility: visible;
+  }
+  #donate{
+    color:#111;
+    font-weight: bolder;
+  }
+  #charity_picker{
+    display: none;
+    padding-bottom: 1.25em;
+  }
+  .donate_link{
+    display: block;
+    padding: 0.4em 0.25em 0.4em 2em;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  .charity_details{
+    color: #555;
+    text-decoration: none;
+    font-weight: normal;
+  }
+  </style>
+</head>
+<body>
+  <title>Options - Pastel New Tab</title>
+  <a class="action_links external_link" target="_blank" id="feedback" href="https://docs.google.com/forms/d/e/1FAIpQLSf9_ku3EUkAOpHjfXGTr4qcWYUmaQpxYEj-WfkDdiwjryrGGQ/viewform?entry.1545185881=Pastel+-+New+tab+for+Chrome&entry.1097111967&entry.1652780603&entry.984758361=Suggest+new+feature+or+improvement&entry.1210432706=Only+if+I+can+find+the+time&entry.1609176506">Leave feedback, or suggestions</a>
+  <a class="action_links" id="delete" href="#delete">Delete extension</a>
+  <a class="action_links external_link" target="_blank" id="source" href="https://github.com/adityabhaskar/newtab-pastel">See source code</a>
+  <a class="action_links external_link" id="donate" href="#donate">Donate</a>
+  <div id="charity_picker">
+    <a class="donate_link" id="code_club" target="_blank" href="https://www.codeclub.org.uk/support-us" title="Supports a nationwide network of volunteers and educators who run free coding clubs for children aged 9-11">Code Club <span class='charity_details'> - Supports a nationwide network of volunteers and educators who run free coding clubs for children aged 9-11</span></a>
+
+    <a class="donate_link" id="bdch" target="_blank" href="https://www.battersea.org.uk/support-us/donate" title="Aims to never turn away a dog or cat in need of help, caring for them no matter how long it takes.">Battersea Dogs &amp; Cats Home <span class='charity_details'> - Aims to never turn away a dog or cat in need of help, caring for them no matter how long it takes.</span></a>
+
+    <a class="donate_link" id="charity_water" target="_blank" href="https://donate.charitywater.org/donate/direct" title="Funds clean water projects for people in need">Charity Water <span class='charity_details'> - Funds clean water projects for people in need</span></a>
+
+    <a class="donate_link" id="dogs_trust" target="_blank" href="https://www.dogstrust.org.uk/donation/" title="Works To bring all dogs a happy life, free from the threat of unnecessary destruction">Dogs Trust <span class='charity_details'> - Works To bring all dogs a happy life, free from the threat of unnecessary destruction</span></a>
+  </div>
+  <script type="text/javascript" src="../js/libs/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/options/options.js"></script>
+</body>
+</html>

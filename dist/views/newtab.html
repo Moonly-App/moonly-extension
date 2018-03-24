@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/fontawesome/css/font-awesome.css">
+  <link rel='stylesheet' href='../css/style.css'>
+  <link rel='stylesheet' href='../css/cat-colors.css'>
+</head>
+
+<body id="body">
+  <div class="header-wrapper">
+    <div class="logo">
+      <a href="#">
+       <img src="/img/logo.png" alt="Moon.ly logo" ></a>
+    </div>
+
+  </div>
+
+    <input type="checkbox" class="openSidebarCats" id="openSidebarCats">
+    <label for="openSidebarCats" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+      </label>
+
+  <div id="sidebarCats">
+    <ul aria-labelledby="dropdownMenu1" class="catsInner">
+      <li id="allCats"><a href="">All</a></li>
+      <li class="catsWrapper">
+        <ul class="cats"></ul>
+      </li>
+    </ul>
+  </div>
+  <div id='center' class="main center">
+    <ul id='posts' class="posts-list-content posts"></ul>
+    <i id="loadMorePosts" class="fa fa-spinner"></i>
+    
+  </div>
+  
+ <div id="wizardOverlay">
+  <div class="mainWizard">
+    <h1>Choose Your Interest</h1>
+    <ul id="wizardcats" class="cats"></ul>
+    <button id="Save" class="fbLogin"><strong>Ok I am done!</strong></button>
+    <!--<div class="tabLoginPopupWrap">   
+      <div class="tabLoginPopup">
+        <h2>Sign In</h2>
+        <button class="fbLogin"><i class="fa fa-facebook-square"></i> <strong>Login</strong> with <strong>Facebook</strong></button>
+        <button class="twLogin"><i class="fa fa-twitter"></i> <strong>Login</strong> with <strong>Twitter</strong></button>
+        <span class="loginOr">OR</span>
+        <input type="email" placeholder="Email or Username">
+        <input type="email" placeholder="Password">
+        <a class="forgotPass" href="#">Forgot Password?</a>
+        <div class="innerWrapper">
+          <a class="emailRegister">Register via Email</a>
+          <button class="emailLogin">Login</button>
+        </div>
+      </div>
+    </div>-->
+  </div>
+ </div>
+
+  <script type="text/javascript" src="../js/libs/chrome-promise.js"></script>
+  <script src='../js/libs/jquery.min.js'></script>
+  <script src='../js/libs/bootstrap.min.js'></script>
+  <script src="../js/libs/moment.js"></script>
+  <script src="../js/libs/sha256.min.js"></script>
+  <script src="../js/libs/sockjs.min.js"></script>
+  <script src='../js/config.js'></script>
+  <script src='../js/popup/query.js'></script>
+  <script src='../js/newtab/jquery.nicescroll.js'></script>
+
+
+  
+  <script src='../js/newtab/loginTest.js'></script>
+  <script src='../js/newtab/script.js'></script>
+ 
+</body>
+
+</html>
