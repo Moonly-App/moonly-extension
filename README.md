@@ -13,6 +13,8 @@ To learn more about it, check the [github repo](https://github.com/Moonly-App/mo
 
 ## Installation
 
+The `build.sh` will create a dist version with production configuration. For local testing and development, you won't be needing to build anything. Build the extension only if you want to host moonly on some server.
+
 - Clone Moonly app and run on you localhost. Follow these [instructions](https://github.com/Moonly-App/moonly-app#installation).
 - Add [src folder](https://github.com/Moonly-App/moonly-extension/tree/master/src) to your Chrome extensions
 
