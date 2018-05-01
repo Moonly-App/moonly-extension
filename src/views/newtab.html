@@ -78,6 +78,15 @@
   
   <script src='../js/newtab/loginTest.js'></script>
   <script src='../js/newtab/script.js'></script>
+  <!-- Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('../service-worker.js', {scope: '../newtab.html'})
+      .catch(err => {
+        console.error(`Failed to register Service Worker, ${err.message}`);
+      });
+    };
+  </script>
  
 </body>
 
