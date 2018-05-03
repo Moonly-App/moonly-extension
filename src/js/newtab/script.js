@@ -144,6 +144,14 @@ function localStorageCatLoader(slug) {
   updatePostsForCat(catsArray);
 }
 
+function getOutgoingUrlExt(url) {
+  const homeUrl = globalSettings.homeURL;
+
+  var encodedUrl = encodeURIComponent(url);
+
+  const addOutlink = homeUrl + "/out?url=" + encodedUrl
+  return addOutlink;
+}
 
 function updateData(sel, msg, list) {
 
@@ -195,7 +203,7 @@ function updateData(sel, msg, list) {
         return `
           <li class="posts-item">
             <div class="posts-item-content">
-              <a href="${elem.url}" class="posts-thumbnail" style="background-image:url('${elem.image || elem.thumbnailUrl}');"></a>
+              <a href="${getOutgoingUrlExt(elem.url)}" class="posts-thumbnail" style="background-image:url('${elem.image || elem.thumbnailUrl}');"></a>
               <div class="postItemAuthorInfo">
                 <div class="posts-item-user">
                   <div class="avatar">
@@ -219,7 +227,7 @@ function updateData(sel, msg, list) {
               <div class="postInfoWrapper">
                 
                 <h3 class="posts-item-title">
-                  <a class="posts-item-title-link" href="${elem.url}">
+                  <a class="posts-item-title-link" href="${getOutgoingUrlExt(elem.url)}">
                   ${elem.title}
                   </a>
                 </h3>
