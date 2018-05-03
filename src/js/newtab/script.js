@@ -231,7 +231,7 @@ function updateData(sel, msg, list) {
                   ${elem.title}
                   </a>
                 </h3>
-                <span class="post-url-domain"><img src="http://s2.googleusercontent.com/s2/favicons?domain_url=${elem.url && extractRootDomain(elem.url)}" /> ${elem.url && extractRootDomain(elem.url)}</span>
+                <span class="post-url-domain"><img src="https://s2.googleusercontent.com/s2/favicons?domain_url=${elem.url && extractRootDomain(elem.url)}" /> ${elem.url && extractRootDomain(elem.url)}</span>
                 <p class="posts-item-desc-excerpt">${elem.excerpt}</p>
                 <div class="posts-categories">
                 ${elem.categories.map(({
