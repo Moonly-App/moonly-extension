@@ -207,7 +207,7 @@ function updateData(sel, msg, list) {
               <div class="postItemAuthorInfo">
                 <div class="posts-item-user">
                   <div class="avatar">
-                    <a href="${globalSettings.homeURL}/users/${elem.user.username}">
+                    <a href="${globalSettings.homeURL}/users/${elem.user.displayName}">
                       <span>
                         <img alt="" class="avatar-image" src="${elem.user.avatarUrl}" title="">
                       </span>
@@ -216,7 +216,7 @@ function updateData(sel, msg, list) {
 
                   <div class="dateWrapper">
                     <span class="spanBy">by </span>
-                    <span class="users-name">${elem.user.username}</span>
+                    <span class="users-name">${elem.user.displayName}</span>
                     <div class="posts-item-date">${elem.postedAt
           ? moment(new Date(elem.postedAt)).fromNow()
           : ""}</div>
