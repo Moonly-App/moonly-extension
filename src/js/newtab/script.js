@@ -207,7 +207,7 @@ function updateData(sel, msg, list) {
               <div class="postItemAuthorInfo">
                 <div class="posts-item-user">
                   <div class="avatar">
-                    <a href="${globalSettings.homeURL}/users/${elem.user.displayName}">
+                    <a href="${globalSettings.homeURL}/users/${elem.user.slug}">
                       <span>
                         <img alt="" class="avatar-image" src="${elem.user.avatarUrl}" title="">
                       </span>
